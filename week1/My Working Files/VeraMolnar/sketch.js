@@ -4,12 +4,12 @@ function setup() {
   }
   
   function draw() {
-     background(255);
+    background(255);
     colorMode(RGB, 255, 255, 255, 1);
     translate(width-900, 0);
     strokeWeight(.35);
   
-    let mX = mouseX;
+
     for (var x=0; x <= width; x += width/75) {
       if (x <= 500) {
         fill(0,0,0,.7);
@@ -19,9 +19,9 @@ function setup() {
         // stroke(0);
         // strokeWeight(.8);
       }
-      rect(x*.45,200+random(-30,40)+mX,5,200);
-      rect(x*.45,400+random(-40,40)+mX,5,200);
-      rect(x*.45,600+random(-30,40)+mX,5,200);
+      rect(x*.45,200+random(-30,40),5,200);
+      rect(x*.45,400+random(-40,40),5,200);
+      rect(x*.45,600+random(-30,40),5,200);
     }
   }
 
